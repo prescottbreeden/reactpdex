@@ -2,12 +2,21 @@ import React from 'react';
 import PokeCard from './PokeCard';
 
 function PokeHand(props) {
-  console.log(props);
+  const { win, exp, hand, name } = props;
   return (
     <div className="poke-hand">
-      {props.win ? <h3>Winner!</h3> : <h3>Loser</h3>}
+      <div className="poke-hand__player-bar">
+        <h3 className="poke-hand__player-name">{name}</h3>
+          {
+            win 
+            ? <h3 className="poke-hand__win">Winner!</h3> 
+            : <h3 className="poke-hand__lose">Loser :(</h3>
+          }
+          <h4>Total Exp: {exp}</h4>
+      </div>
+      <div className="poke-hand__row">
       {
-        props.hand.map(p =>
+        hand.map(p =>
           <PokeCard
             id={p.id}
             name={p.name}
@@ -16,6 +25,7 @@ function PokeHand(props) {
           />
         )
       }
+      </div>
     </div>
   )
 }

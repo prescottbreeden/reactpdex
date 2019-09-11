@@ -8,13 +8,14 @@ const PokeCard = (props) => {
     const sprite = `${pokeApi}${padToThree(id)}.png`;
     return (
         <div className="poke-card">
-            <img className="poke-card__sprite" 
+            <img 
+                className="poke-card__sprite" 
                 src={sprite}
                 alt={name}
             />
             <h3 className="poke-card__name">{name}</h3>
-            <p className="poke-card__text">Type: {type}</p> 
-            <p className="poke-card__text">EXP: {exp}</p>
+            <p className="poke-card__text">Type: <span className={type}>{type}</span></p> 
+            <p className="poke-card__text">Experience: {exp}</p>
         </div>
     );
 }
