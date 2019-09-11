@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import PokeHand from './PokeHand';
 
 const buildHand = (num) => {
