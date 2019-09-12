@@ -1,0 +1,38 @@
+.poke-card {
+  border-radius: 3px;
+  background-color: #fff;
+  margin: 2rem;
+  padding: 1rem;
+  width: 30rem;
+  min-height: 31rem;
+  box-shadow: .7rem 1rem 1.2rem -.5rem rgba(0, 0, 0, .5);
+  transition-property: transform;
+  transition-duration: .2s; }
+.poke-card__name {
+  margin: 2rem 0; }
+.poke-card__text {
+  font-size: 1.5rem; }
+.poke-card__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaedee;
+  height: 25rem;
+  border-radius: 3px; }
+.poke-card__sprite {
+  transition: all ease 500ms; }
+.poke-card__sprite:hover {
+  opacity: .9;
+  transform: scale(1.25); }
+.electric {
+  color: darkgoldenrod; }
+.poison {
+  color: green; }
+.bug {
+  color: brown; }
+.water {
+  color: cornflowerblue; }
+.fire {
+  color: orangered; }
+.flying {
+  color: darkmagenta; }

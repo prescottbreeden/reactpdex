@@ -1,16 +1,16 @@
 import React from 'react';
-import PokeCard from './PokeCard';
+import PokeCard from '../PokeCard/PokeCard';
+import './PokeHand.css';
 
 function PokeHand(props) {
   const { win, exp, hand, name } = props;
   return (
     <div className="poke-hand">
       <div className="poke-hand__player-bar">
-        <h3 className="poke-hand__player-name">{name}</h3>
           {
             win 
-            ? <h3 className="poke-hand__win">Winner!</h3> 
-            : <h3 className="poke-hand__lose">Loser :(</h3>
+            ? <h3 className="poke-hand__win">Winning Hand</h3> 
+            : <h3 className="poke-hand__lose">Losing Hand</h3>
           }
           <h4>Total Exp: {exp}</h4>
       </div>

@@ -1,0 +1,17 @@
+.poke-hand {
+  margin-bottom: 3rem;
+  margin: 0 4rem;
+  padding: 1rem;
+  margin-bottom: 3rem; }
+.poke-hand__row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+.poke-hand__player-bar {
+  align-items: center; }
+.poke-hand__win {
+  font-size: 3rem;
+  color: #4caf50; }
+.poke-hand__lose {
+  font-size: 3rem;
+  color: #e91e63; }

@@ -1,5 +1,5 @@
 import React from 'react';
-import PokeHand from './PokeHand';
+import PokeHand from './components/PokeHand/PokeHand';
 
 const buildHand = (num) => {
   function handHelper(hand = []) {
@@ -27,14 +27,12 @@ const pokemon = [
 const hand1 = buildHand(4);
 const hand2 = buildHand(4);
 const player1 = {
-  name: 'Player1',
   cards: hand1,
   exp: totalExp(hand1),
   win: winner(totalExp(hand1), totalExp(hand2))
 };
 
 const player2 = {
-  name: 'Player2',
   cards: hand2,
   exp: totalExp(hand2),
   win: winner(totalExp(hand2), totalExp(hand1))
@@ -47,12 +45,10 @@ const App = () => {
         <h1 className="app__title">Pokedex Battle Royale with Cheese</h1>
       </header>
       <PokeHand 
-        name={player1.name}
         hand={player1.cards} 
         exp={player1.exp}
         win={player1.win} />
       <PokeHand 
-        name={player2.name}
         hand={player2.cards} 
         exp={player2.exp}
         win={player2.win}/>
